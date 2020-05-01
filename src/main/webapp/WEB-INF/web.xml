@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>serveletbeneficiario</servlet-name>
+  	<display-name>serveletbeneficiario</display-name>
+  	<description></description>
+  	<servlet-class>com.alvaro.controlador.serveletbeneficiario</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>serveletdatos</servlet-name>
+  	<display-name>serveletdatos</display-name>
+  	<description></description>
+  	<servlet-class>com.alvaro.controlador.serveletdatos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>serveletbeneficiario</servlet-name>
+  	<url-pattern>/serveletbeneficiario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>serveletdatos</servlet-name>
+  	<url-pattern>/serveletdatos</url-pattern>
+  </servlet-mapping>
 </web-app>

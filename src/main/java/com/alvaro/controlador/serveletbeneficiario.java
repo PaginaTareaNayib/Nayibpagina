@@ -28,17 +28,7 @@ public class serveletbeneficiario extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String dui = request.getParameter("dui");
-		TblBeneficiario bf = new TblBeneficiario();
-		bf.setDui(dui);
-		beneficiarioDAO dao = new beneficiarioDAO();
-		int verificarbf= dao.Listabeneficiario(bf).size();
-		if(verificarbf == 1) {
-			System.out.println("Entrastes");
-		}
-		else {
-			System.out.println("Nel no funciono");
-		}	
+			
 	}
 
 	/**
